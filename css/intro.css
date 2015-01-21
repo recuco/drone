@@ -1,0 +1,179 @@
+/* line 1, ../scss/intro.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  background: url(../images/bg.jpg);
+}
+
+/* line 9, ../scss/intro.scss */
+body, html {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 15, ../scss/intro.scss */
+#wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+/* line 20, ../scss/intro.scss */
+#wrapper .contenedor {
+  position: absolute;
+  width: 300px;
+  -webkit-animation: animacion2 3s forwards;
+  /* Safari 4+ */
+  -moz-animation: animacion2 3s forwards;
+  /* Fx 5+ */
+  -o-animation: animacion2 3s forwards;
+  /* Opera 12+ */
+  animation: animacion2 3s forwards;
+  /* IE 10+, Fx 29+ */
+}
+/* line 21, ../scss/intro.scss */
+#wrapper .contenedor p {
+  text-align: center;
+}
+/* line 33, ../scss/intro.scss */
+#wrapper .contenedor .logo1 {
+  position: absolute;
+  -webkit-animation: animacion 5s infinite;
+  /* Safari 4+ */
+  -moz-animation: animacion 5s infinite;
+  /* Fx 5+ */
+  -o-animation: animacion 5s infinite;
+  /* Opera 12+ */
+  animation: animacion 5s infinite;
+  /* IE 10+, Fx 29+ */
+  -webkit-animation-delay: 3s;
+  /* Safari 4+ */
+  -moz-animation-delay: 3s;
+  /* Fx 5+ */
+  -o-animation-delay: 3s;
+  /* Opera 12+ */
+  animation-delay: 3s;
+  /* IE 10+, Fx 29+ */
+}
+/* line 45, ../scss/intro.scss */
+#wrapper .contenedor .logo2 {
+  position: absolute;
+  opacity: 0;
+  top: 130px;
+  -webkit-animation: animacion3 5s forwards;
+  /* Safari 4+ */
+  -moz-animation: animacion3 5s forwards;
+  /* Fx 5+ */
+  -o-animation: animacion3 5s forwards;
+  /* Opera 12+ */
+  animation: animacion3 5s forwards;
+  /* IE 10+, Fx 29+ */
+  -webkit-animation-delay: 3s;
+  /* Safari 4+ */
+  -moz-animation-delay: 3s;
+  /* Fx 5+ */
+  -o-animation-delay: 3s;
+  /* Opera 12+ */
+  animation-delay: 3s;
+  /* IE 10+, Fx 29+ */
+}
+/* line 59, ../scss/intro.scss */
+#wrapper .contenedor img {
+  width: 100%;
+}
+
+@-moz-keyframes animacion {
+  /* line 66, ../scss/intro.scss */
+  0% {
+    top: 0px;
+  }
+
+  /* line 70, ../scss/intro.scss */
+  50% {
+    top: 30px;
+  }
+
+  /* line 74, ../scss/intro.scss */
+  100% {
+    top: 0px;
+  }
+}
+
+@-webkit-keyframes animacion {
+  /* line 80, ../scss/intro.scss */
+  0% {
+    top: 0px;
+  }
+
+  /* line 84, ../scss/intro.scss */
+  50% {
+    top: 30px;
+  }
+
+  /* line 88, ../scss/intro.scss */
+  100% {
+    top: 0px;
+  }
+}
+
+@-moz-keyframes animacion2 {
+  /* line 94, ../scss/intro.scss */
+  0% {
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    margin: 0 0 0 -150px;
+  }
+
+  /* line 101, ../scss/intro.scss */
+  100% {
+    top: 30%;
+    left: 50%;
+    opacity: 1;
+    margin: 0 0 0 -150px;
+  }
+}
+
+@-webkit-keyframes animacion2 {
+  /* line 110, ../scss/intro.scss */
+  0% {
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    margin: 0 0 0 -150px;
+  }
+
+  /* line 117, ../scss/intro.scss */
+  100% {
+    top: 30%;
+    left: 50%;
+    opacity: 1;
+    margin: 0 0 0 -150px;
+  }
+}
+
+@-moz-keyframes animacion3 {
+  /* line 126, ../scss/intro.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 130, ../scss/intro.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animacion3 {
+  /* line 136, ../scss/intro.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 140, ../scss/intro.scss */
+  100% {
+    opacity: 1;
+  }
+}

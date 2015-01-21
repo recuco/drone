@@ -1,0 +1,779 @@
+@charset "UTF-8";
+/* line 2, ../scss/estilos.scss */
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, ../scss/estilos.scss */
+body, html {
+  height: 100%;
+  position: relative;
+}
+
+@font-face {
+  font-family: 'icomoonregular';
+  src: url("../fonts/icomoon-webfont.eot");
+  src: url("../fonts/icomoon-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon-webfont.woff2") format("woff2"), url("../fonts/icomoon-webfont.woff") format("woff"), url("../fonts/icomoon-webfont.ttf") format("truetype"), url("../fonts/icomoon-webfont.svg#icomoonregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 25, ../scss/estilos.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 29, ../scss/estilos.scss */
+#btn_m {
+  display: none;
+}
+
+/* line 33, ../scss/estilos.scss */
+footer {
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  text-align: center;
+}
+/* line 42, ../scss/estilos.scss */
+footer div {
+  width: 25%;
+}
+/* line 44, ../scss/estilos.scss */
+footer div a {
+  display: block;
+  padding: 20px;
+  color: #333;
+  font-weight: 700;
+  font-size: 13px;
+}
+/* line 52, ../scss/estilos.scss */
+footer div:hover {
+  background: #f0f0f0;
+}
+
+/* line 58, ../scss/estilos.scss */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 63, ../scss/estilos.scss */
+nav {
+  width: 100%;
+  text-align: right;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* line 75, ../scss/estilos.scss */
+#logo {
+  width: 180px;
+  position: fixed;
+  padding: 10px;
+  left: 50%;
+  margin: 0 0 0 -500px;
+  z-index: 11;
+}
+/* line 83, ../scss/estilos.scss */
+#logo .logo1 {
+  position: absolute;
+  top: 10px;
+  -webkit-animation: animacion 5s infinite;
+  /* Safari 4+ */
+  -moz-animation: animacion 5s infinite;
+  /* Fx 5+ */
+  -o-animation: animacion 5s infinite;
+  /* Opera 12+ */
+  animation: animacion 5s infinite;
+  /* IE 10+, Fx 29+ */
+}
+/* line 95, ../scss/estilos.scss */
+#logo .logo2 {
+  position: absolute;
+  top: 80px;
+}
+
+@-moz-keyframes animacion {
+  /* line 44, ../scss/intro.scss */
+  /* line 106, ../scss/estilos.scss */
+  0% {
+    top: 10px;
+  }
+
+  /* line 110, ../scss/estilos.scss */
+  50% {
+    top: 30px;
+  }
+
+  /* line 49, ../scss/intro.scss */
+  /* line 115, ../scss/estilos.scss */
+  100% {
+    top: 10px;
+  }
+}
+
+@-webkit-keyframes animacion {
+  /* line 56, ../scss/intro.scss */
+  /* line 122, ../scss/estilos.scss */
+  0% {
+    top: 10px;
+  }
+
+  /* line 126, ../scss/estilos.scss */
+  50% {
+    top: 30px;
+  }
+
+  /* line 61, ../scss/intro.scss */
+  /* line 131, ../scss/estilos.scss */
+  100% {
+    top: 10px;
+  }
+}
+
+/* line 136, ../scss/estilos.scss */
+.control {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 8888;
+  padding: 10px 30px;
+  font-size: 14px;
+}
+/* line 144, ../scss/estilos.scss */
+.control i {
+  padding: 10px;
+  color: #3b4141;
+}
+/* line 149, ../scss/estilos.scss */
+.control a {
+  color: #a8a8a8;
+}
+
+/* line 154, ../scss/estilos.scss */
+#menu {
+  list-style: none;
+  padding: 10px 0;
+  width: 1000px;
+  margin: 0 auto;
+}
+/* line 160, ../scss/estilos.scss */
+#menu li {
+  text-align: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+/* line 166, ../scss/estilos.scss */
+#menu li::before {
+  z-index: 20;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 25px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  -webkit-transform: scale3d(0, 0, 1);
+  transform: scale3d(0, 0, 1);
+}
+/* line 184, ../scss/estilos.scss */
+#menu li a {
+  position: relative;
+  text-decoration: none;
+  color: #4a4a4a;
+  display: block;
+  webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  z-index: 22;
+  font-size: 14px;
+}
+/* line 197, ../scss/estilos.scss */
+#menu li a .icono {
+  position: relative;
+  margin: 15px 0 10px 0;
+  font-family: 'icomoonregular';
+  font-weight: normal;
+  width: 100%;
+  display: block;
+  font-size: 28px;
+  color: #4a4a4a;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  z-index: 23;
+}
+
+/*.uno {color: #324d5b !important;}
+.dos {color: #3db39e !important;}
+.tres {color: #2ea9d3 !important;}
+.cuatro {color: #e2574c !important;}
+.cinco {color: #efc75e !important;}
+.seis {color: #f4be8a !important;}
+.siente {color: #324d5b !important;}
+*/
+/* line 226, ../scss/estilos.scss */
+#menu li:hover::before, #menu li.active::before {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+/* line 231, ../scss/estilos.scss */
+#menu li.uno::before {
+  background: #324d5b;
+}
+
+/* line 232, ../scss/estilos.scss */
+#menu li.dos::before {
+  background: #3db39e;
+}
+
+/* line 233, ../scss/estilos.scss */
+#menu li.tres::before {
+  background: #bdc3c7;
+}
+
+/* line 234, ../scss/estilos.scss */
+#menu li.cuatro::before {
+  background: #e2574c;
+}
+
+/* line 235, ../scss/estilos.scss */
+#menu li.cinco::before {
+  background: #2ea9d3;
+}
+
+/* line 236, ../scss/estilos.scss */
+#menu li.seis::before {
+  background: #736176;
+}
+
+/* line 237, ../scss/estilos.scss */
+#menu li.siete::before {
+  background: #d73d67;
+}
+
+/* line 242, ../scss/estilos.scss */
+#menu li:hover a .icono, #menu li.active a .icono {
+  margin: 15px 0 15px 0;
+  color: #fff;
+}
+
+/* line 249, ../scss/estilos.scss */
+#menu li a {
+  text-decoration: none;
+}
+
+/* /////////////////////////////// COMUNES /&//////////////////////////////*/
+/* line 255, ../scss/estilos.scss */
+#menu li, nav, .active, #logo, .contenido, .container, .cont_gal, .gal_item, .ordenador, .nombre, footer, footer div, .ocultar, .contenido, ul, .clientes ul, .clientes li, .contacto, .contacto form div {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 261, ../scss/estilos.scss */
+#menu li, .ordenador, footer div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* /////////////////////////////// COMUNES /&//////////////////////////////*/
+/* line 268, ../scss/estilos.scss */
+.wrapper {
+  height: 100%;
+  position: relative;
+}
+/* line 272, ../scss/estilos.scss */
+.wrapper .imagen {
+  height: 50%;
+}
+/* line 276, ../scss/estilos.scss */
+.wrapper .contenido {
+  background: url(../images/blanco.png);
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+}
+/* line 282, ../scss/estilos.scss */
+.wrapper .contenido i {
+  font-family: 'icomoonregular';
+  font-style: normal;
+  font-size: 100px;
+  color: #a8a7a7;
+}
+/* line 289, ../scss/estilos.scss */
+.wrapper .contenido h2 {
+  font-size: 50px;
+  color: #4d4b4b;
+  margin: 20px 0;
+}
+/* line 295, ../scss/estilos.scss */
+.wrapper .contenido p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #4d4b4b;
+  line-height: 1.5em;
+}
+
+/* line 304, ../scss/estilos.scss */
+.img_inicio {
+  height: 100px;
+}
+
+/* line 308, ../scss/estilos.scss */
+.fondo1 {
+  background: url(../images/set/seguridad.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 316, ../scss/estilos.scss */
+.fondo1 {
+  background: url(../images/set/seguridad.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 324, ../scss/estilos.scss */
+.fondo2 {
+  background: url(../images/set/vida.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 332, ../scss/estilos.scss */
+.fondo3 {
+  background: url(../images/set/agricultura.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 340, ../scss/estilos.scss */
+.fondo4 {
+  background: url(../images/set/renta.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 348, ../scss/estilos.scss */
+.fondo5 {
+  background: url(../images/set/aereo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 356, ../scss/estilos.scss */
+.fondo6 {
+  background: url(../images/set/desarrollo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 364, ../scss/estilos.scss */
+.fondo_videos {
+  background: #2f3238;
+}
+
+/* line 368, ../scss/estilos.scss */
+.fondo_contacto {
+  background: url(../images/2.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+/* line 376, ../scss/estilos.scss */
+.cont_gal {
+  width: 1000px;
+  padding: 0 20px;
+  margin: 0 auto 100px auto;
+  position: relative;
+  z-index: 9;
+}
+/* line 383, ../scss/estilos.scss */
+.cont_gal .ordenador {
+  width: 50%;
+  padding: 20px;
+}
+/* line 387, ../scss/estilos.scss */
+.cont_gal .ordenador .gal_item {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 55%;
+  background: #695280;
+}
+/* line 394, ../scss/estilos.scss */
+.cont_gal .ordenador .gal_item i {
+  position: absolute;
+  z-index: 79;
+  font-size: 60px;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  margin: -30px 0 0 -25px;
+  opacity: 0;
+  webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+/* line 410, ../scss/estilos.scss */
+.cont_gal .ordenador .gal_item .nombre {
+  font-weight: 700;
+  font-size: 20px;
+  position: absolute;
+  z-index: 80;
+  background: #fff;
+  width: 100%;
+  padding: 40px 20px;
+  bottom: -100px;
+  webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  opacity: 0;
+}
+/* line 426, ../scss/estilos.scss */
+.cont_gal .ordenador .gal_item .nombre span {
+  font-weight: 400;
+}
+/* line 431, ../scss/estilos.scss */
+.cont_gal .ordenador .gal_item img {
+  z-index: 70;
+  opacity: 0.5;
+  width: 120%;
+  position: absolute;
+  webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+/* line 445, ../scss/estilos.scss */
+.cont_gal .ordenador .gal_item:hover i {
+  margin: -50px 0 0 -25px;
+  opacity: 0.8;
+}
+/* line 450, ../scss/estilos.scss */
+.cont_gal .ordenador .gal_item:hover img {
+  width: 100%;
+  opacity: 0.7;
+}
+/* line 455, ../scss/estilos.scss */
+.cont_gal .ordenador .gal_item:hover .nombre {
+  padding: 20px;
+  bottom: 0;
+  opacity: 0.8;
+}
+
+/* line 465, ../scss/estilos.scss */
+.clientes {
+  width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+}
+/* line 471, ../scss/estilos.scss */
+.clientes ul li {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  border: 1px solid #dddddd;
+}
+/* line 477, ../scss/estilos.scss */
+.clientes ul li img {
+  width: 100%;
+  opacity: 0.4;
+  webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+/* line 486, ../scss/estilos.scss */
+.clientes ul li img:hover {
+  opacity: 1;
+}
+
+/* line 494, ../scss/estilos.scss */
+.contacto {
+  width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #fff;
+}
+/* line 500, ../scss/estilos.scss */
+.contacto .redes {
+  list-style: none;
+  margin: 0 0 50px 0;
+  padding: 0;
+}
+/* line 505, ../scss/estilos.scss */
+.contacto .redes li {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+/* line 509, ../scss/estilos.scss */
+.contacto .redes li a {
+  color: #a8a8a8;
+  font-size: 30px;
+}
+/* line 517, ../scss/estilos.scss */
+.contacto form ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 522, ../scss/estilos.scss */
+.contacto form ul li {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+}
+/* line 526, ../scss/estilos.scss */
+.contacto form ul li i {
+  width: 20px;
+  display: inline-block;
+  padding: 10px;
+}
+/* line 532, ../scss/estilos.scss */
+.contacto form ul li input {
+  width: 80%;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-left: 2px solid #4ab7ff;
+}
+/* line 542, ../scss/estilos.scss */
+.contacto form .btn {
+  padding: 15px 20px;
+  color: #fff;
+  background: #3b4141;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+/* /////////////////////////////// 1000 /&//////////////////////////////*/
+@media screen and (max-width: 1000px) {
+  /* line 558, ../scss/estilos.scss */
+  #logo {
+    left: 0;
+    margin: 0;
+  }
+  /* line 562, ../scss/estilos.scss */
+  #logo .logo2 {
+    top: 80px;
+  }
+
+  /* line 568, ../scss/estilos.scss */
+  #menu {
+    width: 100%;
+  }
+
+  /* line 572, ../scss/estilos.scss */
+  .container {
+    position: relative;
+    height: auto;
+  }
+  /* line 576, ../scss/estilos.scss */
+  .container .contenido {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    top: 0 !important;
+    left: 0 !important;
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+  }
+
+  /* line 588, ../scss/estilos.scss */
+  .wrapper .imagen {
+    height: 70% !important;
+  }
+}
+/* /////////////////////////////// 450 /&//////////////////////////////*/
+@media screen and (max-width: 450px) {
+  /* line 598, ../scss/estilos.scss */
+  #btn_m {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+  }
+
+  /* line 606, ../scss/estilos.scss */
+  #logo {
+    background: #fff;
+    position: relative !important;
+    width: 100%;
+    height: 120px;
+  }
+  /* line 612, ../scss/estilos.scss */
+  #logo .logo1 {
+    width: 50%;
+    left: 50%;
+    margin: 0 0 0 -25%;
+  }
+  /* line 618, ../scss/estilos.scss */
+  #logo .logo2 {
+    width: 60%;
+    left: 50%;
+    margin: 0 0 0 -29%;
+    top: 70%;
+  }
+
+  /* line 626, ../scss/estilos.scss */
+  nav {
+    position: relative;
+    display: none;
+  }
+
+  /* line 632, ../scss/estilos.scss */
+  .wrapper .contenido {
+    padding: 20px;
+  }
+  /* line 635, ../scss/estilos.scss */
+  .wrapper .contenido h2 {
+    font-size: 20px;
+  }
+
+  /* line 641, ../scss/estilos.scss */
+  #menu {
+    padding: 0;
+  }
+  /* line 644, ../scss/estilos.scss */
+  #menu li {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #999;
+  }
+  /* line 649, ../scss/estilos.scss */
+  #menu li::before {
+    display: none;
+  }
+  /* line 655, ../scss/estilos.scss */
+  #menu li:hover a .icono {
+    color: #000 !important;
+  }
+  /* line 662, ../scss/estilos.scss */
+  #menu li a .icono, #menu li a .texto {
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  /* line 668, ../scss/estilos.scss */
+  #menu li a .icono {
+    font-size: 20px;
+    width: auto;
+  }
+
+  /* line 676, ../scss/estilos.scss */
+  .img_inicio {
+    height: 10px;
+  }
+
+  /* line 680, ../scss/estilos.scss */
+  .cont_gal {
+    width: 100%;
+  }
+  /* line 683, ../scss/estilos.scss */
+  .cont_gal .ordenador {
+    width: 100%;
+    padding: 10px;
+  }
+  /* line 688, ../scss/estilos.scss */
+  .cont_gal .ordenador .gal_item i {
+    opacity: 1;
+  }
+  /* line 692, ../scss/estilos.scss */
+  .cont_gal .ordenador .gal_item .nombre {
+    bottom: 0;
+    opacity: 1;
+    padding: 5px;
+    font-size: 14px;
+  }
+  /* line 700, ../scss/estilos.scss */
+  .cont_gal .ordenador .gal_item:hover .nombre {
+    padding: 5px;
+  }
+
+  /* line 708, ../scss/estilos.scss */
+  .clientes {
+    width: 100%;
+  }
+  /* line 712, ../scss/estilos.scss */
+  .clientes ul li {
+    width: 50%;
+  }
+
+  /* line 718, ../scss/estilos.scss */
+  .contacto {
+    width: 100%;
+    padding: 10px;
+  }
+  /* line 724, ../scss/estilos.scss */
+  .contacto form ul li {
+    padding: 5px;
+  }
+  /* line 727, ../scss/estilos.scss */
+  .contacto form ul li input {
+    width: 60%;
+  }
+  /* line 733, ../scss/estilos.scss */
+  .contacto form .btn {
+    margin: 20px auto;
+    display: block;
+    width: 80%;
+  }
+  /* line 739, ../scss/estilos.scss */
+  .contacto form p {
+    text-align: center;
+  }
+  /* line 742, ../scss/estilos.scss */
+  .contacto form p span {
+    width: 100%;
+    display: block;
+  }
+}
