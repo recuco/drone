@@ -1,6 +1,8 @@
 <?php include 'php/header.php' ?>
 <section class="img_inicio"></section>
 
+<!--  Pureba Git -->
+
 <section class="contenido">
 	<i>i</i>
 	<h2>Public Saefty</h2>
